@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 222890714606993728}
   - component: {fileID: 114846404066296890}
   - component: {fileID: 225140119345145186}
+  - component: {fileID: 114754055179190172}
   m_Layer: 0
   m_Name: Card
   m_TagString: Untagged
@@ -165,6 +166,22 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: This card deals  14  damage to the character it targets. It will also stun
     the target.
+--- !u!114 &114754055179190172
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1876269751743586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd092dba8dd9944dbda7b68c8ed3d3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  card: {fileID: 0}
+  image: {fileID: 114835922948238854}
+  cost: {fileID: 114135207231189542}
+  description: {fileID: 114593330751255254}
+  cardName: {fileID: 114910842709482028}
 --- !u!114 &114835922948238854
 MonoBehaviour:
   m_ObjectHideFlags: 1
