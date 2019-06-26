@@ -16,8 +16,9 @@ public class CardDisplay : MonoBehaviour {
             throw new MissingReferenceException("No card reference");
         image.sprite = card.cardArt;
         cost.text = card.cost.ToString();
-        description.text = card.cardText.ToString();
-        cardName.text = card.cardName.ToString();
+        description.text = card.cardText;
+        cardName.text = card.name;
 	}
+
 
 }
