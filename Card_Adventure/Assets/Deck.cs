@@ -32,4 +32,15 @@ public class Deck : MonoBehaviour
             cards.RemoveAt(0);
         }
     }
+
+    public void Shuffle()
+    {
+        for (int i =cards.Count-1; i>0; i--)
+        {
+            int index = Random.Range((int)0, (int)i+1);
+            Card temp=cards[i];
+            cards[i] = cards[index];
+            cards[index] = temp;
+        }
+    }
 }
