@@ -19,7 +19,8 @@ public class Deck : MonoBehaviour
 
     public void Remove (Card c)
     {
-        cards.Remove(cards.Find(d => d.cardId.Equals(c.cardId)));
+        cards.Remove(c);
+        //cards.Remove(cards.Find(d => d.GetInstanceID().Equals(c.GetInstanceID())));
     }
 
     public void Draw ()
@@ -27,7 +28,8 @@ public class Deck : MonoBehaviour
         if (cards.Count > 1)
         {
             GameObject g = Instantiate(prefabCard, hand.transform);
-            g.GetComponent<CardDisplay>().card = cards[0];
+            //g.GetComponent<CardDisplay>().card = cards[0];
+            g.GetComponent<CardDisplay>().card = Instantiate(cards[1]);
             g.transform.SetSiblingIndex(0);
             cards.RemoveAt(0);
         }

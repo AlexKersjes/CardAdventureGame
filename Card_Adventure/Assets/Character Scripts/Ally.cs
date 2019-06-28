@@ -5,10 +5,11 @@ using System.Linq;
 
 public class Ally : Character
 {
-    int level=0;
-    public string characterName;
-    protected List<Card> cards;
+    public int level=0;
+    public string className;
+    public List<Card> cards;
     public Equipment equip;
+    public int hpIncrease;
 
     public List<Card> GetCards()
     {

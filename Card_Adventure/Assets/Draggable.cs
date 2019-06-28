@@ -20,6 +20,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
 
 
         placeholder = new GameObject();
+        placeholder.name = "Layout Placeholder";
         placeholder.transform.SetParent(oldParent);
         placeholder.transform.SetSiblingIndex(i);
         LayoutElement layout = placeholder.AddComponent<LayoutElement>();

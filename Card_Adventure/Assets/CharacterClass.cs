@@ -5,7 +5,4 @@ using UnityEngine;
 public class CharacterClass : ScriptableObject
 {
     public CharacterClass upgradesTo;
-    public Card[] baseCards;
-    public Equipment baseEquipment;
-    public int hpIncrease;
 }

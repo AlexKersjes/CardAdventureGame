@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CardDisplay : MonoBehaviour {
+public class CardDisplay : MonoBehaviour
+{
 
     public Card card;
     public Image image;
@@ -18,6 +19,7 @@ public class CardDisplay : MonoBehaviour {
         cost.text = card.cost.ToString();
         description.text = card.cardText;
         cardName.text = card.name;
+        this.name = card.name;
 	}
 
 

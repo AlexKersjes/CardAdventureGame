@@ -83,12 +83,16 @@
     <Compile Include="Assets\CardDisplay.cs" />
     <Compile Include="Assets\Character Scripts\Ally.cs" />
     <Compile Include="Assets\Character Scripts\Character.cs" />
+    <Compile Include="Assets\Character Scripts\CharacterInstance.cs" />
     <Compile Include="Assets\Character Scripts\Enemy.cs" />
     <Compile Include="Assets\CharacterClass.cs" />
     <Compile Include="Assets\Deck.cs" />
     <Compile Include="Assets\Draggable.cs" />
     <Compile Include="Assets\DropZone.cs" />
     <Compile Include="Assets\Equipment.cs" />
+    <Compile Include="Assets\EventSystem\EventListener.cs" />
+    <Compile Include="Assets\EventSystem\EventRaiser.cs" />
+    <Compile Include="Assets\EventSystem\GameEvent.cs" />
     <Compile Include="Assets\SingleTarget.cs" />
     <Compile Include="Assets\TargetingBehaviour.cs" />
   </ItemGroup>

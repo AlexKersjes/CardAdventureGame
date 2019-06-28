@@ -4,9 +4,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "new TargetingBehaviour", menuName = "TargetingBehaviour")]
 public class TargetingBehaviour : ScriptableObject
 {
-    int numberOfTargets = 0;
-    bool targetsCards = false;
-    ScriptableObject targetType;
+    public int numberOfTargets = 0;
+    public bool targetsCards = false;
+    public ScriptableObject targetType = new Enemy();
 
 
     public int GetTargetCount()
