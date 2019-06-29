@@ -61,6 +61,9 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         GetComponent<CanvasGroup>().blocksRaycasts = true;
     }
 
-
+    public void OnDestroy()
+    {
+        Destroy(placeholder);
+    }
 
 }

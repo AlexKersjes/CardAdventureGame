@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class Deck : MonoBehaviour
 {
     public List<Card> cards;
     public GameObject hand;
     public GameObject prefabCard;
+    public EncounterManager manager;
+
+
     public void AddCard (Card c)
     {
         cards.Insert(0, c); //index 0 is the top of the deck
@@ -25,11 +29,10 @@ public class Deck : MonoBehaviour
 
     public void Draw ()
     {
-        if (cards.Count > 1)
+        if (cards.Count > 0)
         {
             GameObject g = Instantiate(prefabCard, hand.transform);
-            //g.GetComponent<CardDisplay>().card = cards[0];
-            g.GetComponent<CardDisplay>().card = Instantiate(cards[1]);
+            g.GetComponent<CardDisplay>().card = cards[0];
             g.transform.SetSiblingIndex(0);
             cards.RemoveAt(0);
         }
