@@ -8,8 +8,6 @@ public class Deck : MonoBehaviour
     public List<Card> cards;
     public GameObject hand;
     public GameObject prefabCard;
-    public EncounterManager manager;
-
 
     public void AddCard (Card c)
     {

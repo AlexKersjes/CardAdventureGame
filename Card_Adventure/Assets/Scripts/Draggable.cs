@@ -13,12 +13,13 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        //storing starting values of card
         offset = eventData.position;
         oldParent = this.transform.parent;
         int i = this.transform.GetSiblingIndex();
         this.transform.SetParent(this.transform.parent.parent);
 
-
+        //creating a placeholder for the card in hand
         placeholder = new GameObject();
         placeholder.name = "Layout Placeholder";
         placeholder.transform.SetParent(oldParent);

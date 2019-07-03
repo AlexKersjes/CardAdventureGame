@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
-public class Ally : Character
+[CreateAssetMenu(fileName = "New Class",menuName = "CharacterClass")]
+public class CharacterClass : Character
 {
-    public int level=0;
+    public CharacterClass upgradesTo;
+    public int level = 0;
     public string className;
     public List<Card> cards;
     public Equipment equip;
-    public int hpIncrease;
+    [HideInInspector]
+    public int hpModifier=0;
 
     public List<Card> GetCards()
     {

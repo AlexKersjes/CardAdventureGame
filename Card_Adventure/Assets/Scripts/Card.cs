@@ -9,5 +9,5 @@ public class Card : ScriptableObject
     public int cost;
 
     public Sprite cardArt;
-    
+    public Object Script;
 }

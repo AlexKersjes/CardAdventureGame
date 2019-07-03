@@ -13,5 +13,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardText: Add (1)
   cost: 0
-  cardId: 0
   cardArt: {fileID: 21300000, guid: efb18844f9cfa3e4ba348dd6c4ea73ac, type: 3}
+  Script: {fileID: 11500000, guid: d5765304791675244954c46ebc3bd0be, type: 3}

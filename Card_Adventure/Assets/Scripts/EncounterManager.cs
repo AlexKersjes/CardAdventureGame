@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EncounterManager : MonoBehaviour
+public class EncounterManager : Singleton<EncounterManager>
 {
     bool PlayerTurn = true;
     public Deck deck;
@@ -38,8 +38,7 @@ public class EncounterManager : MonoBehaviour
     public void EmptyDraw()
     {
         deck.cards = discard.cards;
-        discard.cards = new List<Card>();
-        
+        discard.cards = new List<Card>();    
     }
 
     public void Shuffle()

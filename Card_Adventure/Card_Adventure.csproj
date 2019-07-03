@@ -79,8 +79,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Character Scripts\Ally.cs" />
     <Compile Include="Assets\Character Scripts\Character.cs" />
+    <Compile Include="Assets\Character Scripts\CharacterClass.cs" />
     <Compile Include="Assets\Character Scripts\CharacterInstance.cs" />
     <Compile Include="Assets\Character Scripts\Enemy.cs" />
     <Compile Include="Assets\EventSystem\EventListener.cs" />
@@ -88,14 +88,14 @@
     <Compile Include="Assets\EventSystem\GameEvent.cs" />
     <Compile Include="Assets\Scripts\Card.cs" />
     <Compile Include="Assets\Scripts\CardDisplay.cs" />
-    <Compile Include="Assets\Scripts\CharacterClass.cs" />
     <Compile Include="Assets\Scripts\Deck.cs" />
-    <Compile Include="Assets\Scripts\DeckDiscard.cs" />
     <Compile Include="Assets\Scripts\Draggable.cs" />
     <Compile Include="Assets\Scripts\DropZone.cs" />
     <Compile Include="Assets\Scripts\EncounterManager.cs" />
     <Compile Include="Assets\Scripts\Equipment.cs" />
     <Compile Include="Assets\Scripts\SingleTarget.cs" />
+    <Compile Include="Assets\Scripts\Singleton.cs" />
+    <Compile Include="Assets\Scripts\SpellScript.cs" />
     <Compile Include="Assets\Scripts\TargetingBehaviour.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -20,7 +20,9 @@ public class CardDisplay : MonoBehaviour
         description.text = card.cardText;
         cardName.text = card.name;
         this.name = card.name;
+        Component.Instantiate<SpellScript>(card.Script as SpellScript, this.transform) ;
 	}
+
 
 
 }
