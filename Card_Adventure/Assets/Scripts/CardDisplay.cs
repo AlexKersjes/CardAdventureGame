@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class CardDisplay : MonoBehaviour
 {
@@ -15,14 +16,20 @@ public class CardDisplay : MonoBehaviour
 	void Start () {
         if (card == null)
             throw new MissingReferenceException("No card reference");
+        Refresh();
+        if(card.targetNo == 0)
+        {
+            this.gameObject.AddComponent<SpellScript>();
+        }
+	}
+
+    void Refresh ()
+    {
         image.sprite = card.cardArt;
-        cost.text = card.cost.ToString();
+        cost.text = card.Cost.ToString();
         description.text = card.cardText;
         cardName.text = card.name;
         this.name = card.name;
-        Component.Instantiate<SpellScript>(card.Script as SpellScript, this.transform) ;
-	}
-
-
+    }
 
 }

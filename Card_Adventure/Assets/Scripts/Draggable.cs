@@ -37,16 +37,19 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         offset = eventData.position;
 
         int newSiblingIndex = placeholder.transform.parent.childCount ;
-        for ( int i = 0; i < oldParent.childCount;i++)
+        if (this.transform.position.y < oldParent.transform.position.y)
         {
-            if (this.transform.position.x < oldParent.GetChild(i).position.x)
+            for (int i = 0; i < oldParent.childCount; i++)
             {
-                newSiblingIndex = i;
-                if (placeholder.transform.GetSiblingIndex() < newSiblingIndex)
-                    newSiblingIndex--;
-                break;
+                if (this.transform.position.x < oldParent.GetChild(i).position.x)
+                {
+                    newSiblingIndex = i;
+                    if (placeholder.transform.GetSiblingIndex() < newSiblingIndex)
+                        newSiblingIndex--;
+                    break;
+                }
+
             }
-            
         }
         placeholder.transform.SetSiblingIndex(newSiblingIndex);
     }

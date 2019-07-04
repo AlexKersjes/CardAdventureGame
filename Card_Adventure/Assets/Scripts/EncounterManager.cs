@@ -7,6 +7,7 @@ public class EncounterManager : Singleton<EncounterManager>
     bool PlayerTurn = true;
     public Deck deck;
     public Deck discard;
+    public Event SpellEffect;
     public GameEvent startPlayerTurn;
     public GameEvent startEnemyTurn;
     public GameEvent drawEvent;

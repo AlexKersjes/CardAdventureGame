@@ -4,5 +4,12 @@ using UnityEngine;
 
 public class SpellScript : MonoBehaviour
 {
-    public TargetingBehaviour targetingBehaviour;
+    public delegate void SpellHandler();
+    public SpellHandler spellHandler;
+    public Event spell;
+    private void Start()
+    {
+        
+    }
+    
 }
