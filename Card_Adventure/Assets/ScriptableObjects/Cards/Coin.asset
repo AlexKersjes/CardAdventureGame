@@ -11,9 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9abfabb2a718984496562f993039400, type: 3}
   m_Name: Coin
   m_EditorClassIdentifier: 
-  cardText: 
+  cardText: Gives 1 energy
   cardArt: {fileID: 21300000, guid: efb18844f9cfa3e4ba348dd6c4ea73ac, type: 3}
   targetNo: 0
   targetsAlly: 0
   targetsEnemy: 0
   targetsCard: 0
+  cardScriptName: SpellScript

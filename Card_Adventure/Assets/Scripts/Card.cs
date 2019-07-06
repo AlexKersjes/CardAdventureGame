@@ -16,6 +16,8 @@ public class Card : ScriptableObject
     public bool targetsAlly=false;
     public bool targetsEnemy=false;
     public bool targetsCard=false;
+    public string cardScriptName;
+    public Type cardScript { get { return System.Reflection.Assembly.GetExecutingAssembly().GetType(cardScriptName); } }
 
     public int Cost
     {

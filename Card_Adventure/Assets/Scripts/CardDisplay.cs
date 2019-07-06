@@ -17,9 +17,13 @@ public class CardDisplay : MonoBehaviour
         if (card == null)
             throw new MissingReferenceException("No card reference");
         Refresh();
-        if(card.targetNo == 0)
+        try
         {
-            this.gameObject.AddComponent<SpellScript>();
+            this.gameObject.AddComponent(card.cardScript);
+        }
+        catch
+        {
+            throw new Exception("script for "+card.name+" could not be found or added.");
         }
 	}
 
