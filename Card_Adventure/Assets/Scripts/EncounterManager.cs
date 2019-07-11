@@ -13,6 +13,11 @@ public class EncounterManager : Singleton<EncounterManager>
     public GameEvent drawEvent;
     public GameEvent shuffleEvent;
 
+
+    public void CastSpell(SpellArgs spellArgs)
+    {
+
+    }
     public void PassTurn()
     {
         PlayerTurn = !PlayerTurn;

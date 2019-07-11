@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class SpellArgs
 {
-    public Character[] targets;
+    public CharacterInstance[] targets;
+    public Card card;
+    public int damageAmount;
+    public int blockAmount;
 
-    public SpellArgs() { }
-    public SpellArgs(Character[] targets)
+    public SpellArgs(Card c) { card = c; }
+    public SpellArgs(Card c, CharacterInstance[] targets)
     {
+        card = c;
         this.targets = targets;
     }
 }

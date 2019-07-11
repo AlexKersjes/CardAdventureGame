@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a21638796e16ca41b27b3210728f677, type: 3}
+  m_Name: Mercenary
+  m_EditorClassIdentifier: 
+  maxHp: 50
+  sprite: {fileID: 21300000, guid: 13b54a344676c044fb04a1a35e931da2, type: 3}
+  upgradesTo: {fileID: 0}
+  level: 1
+  className: Mercenary
+  cards: []
+  equip: {fileID: 0}
+  hpModifier: 0

@@ -8,10 +8,14 @@ public class CardDisplay : MonoBehaviour
 {
 
     public Card card;
-    public Image image;
-    public Text cost;
-    public Text description;
-    public Text cardName;
+    [SerializeField]
+    private Image image;
+    [SerializeField]
+    private Text cost;
+    [SerializeField]
+    private Text description;
+    [SerializeField]
+    private Text cardName;
 	// Use this for initialization
 	void Start () {
         if (card == null)

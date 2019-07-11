@@ -1,14 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CharacterInstance : MonoBehaviour
 {
     #region fields
 
     public Character character;
-    public int hp;
-    public int block;
+    public Image image;
+
+    private int hp;
+    private int block;
 
 
     public int HP
@@ -26,6 +29,7 @@ public class CharacterInstance : MonoBehaviour
     {
         if (!character)
             throw new System.NullReferenceException("CharacterInstance was not given a character");
+        Init(character);
     }
 
     public virtual void TakeDamage(int dmg)
@@ -53,5 +57,12 @@ public class CharacterInstance : MonoBehaviour
     public virtual void ResetBlock()
     {
         block = 0;
+    }
+
+    public void Init(Character character)
+    {
+        image.sprite = character.sprite;
+        hp = character.maxHp;
+        this.name = character.name;
     }
 }

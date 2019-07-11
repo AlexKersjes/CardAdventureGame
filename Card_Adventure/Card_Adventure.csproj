@@ -95,8 +95,10 @@
     <Compile Include="Assets\Scripts\Equipment.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Compile Include="Assets\Scripts\SpellClasses\NoArgs.cs" />
+    <Compile Include="Assets\Scripts\SpellClasses\SingleArgs.cs" />
     <Compile Include="Assets\Scripts\SpellClasses\SpellArgs.cs" />
     <Compile Include="Assets\Scripts\SpellClasses\SpellDictionary.cs" />
+    <Compile Include="Assets\Scripts\SpellEffects.cs" />
     <Compile Include="Assets\Scripts\SpellScript.cs" />
     <Compile Include="Assets\Scripts\TargetingBehaviour.cs" />
   </ItemGroup>

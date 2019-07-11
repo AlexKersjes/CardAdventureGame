@@ -9,15 +9,20 @@ using System;
 public class Card : ScriptableObject
 {
     public string cardText;
+    [SerializeField]
     private int cost = 0;
 
     public Sprite cardArt;
     public int targetNo=0;
-    public bool targetsAlly=false;
-    public bool targetsEnemy=false;
-    public bool targetsCard=false;
-    public string cardScriptName;
-    public Type cardScript { get { return System.Reflection.Assembly.GetExecutingAssembly().GetType(cardScriptName); } }
+    [SerializeField]
+    private bool targetsAlly = false;
+    [SerializeField]
+    private bool targetsEnemy = false;
+    [SerializeField]
+    private bool targetsCard = false;
+    [SerializeField]
+    private string CardScriptName;
+    public Type cardScript { get { return System.Reflection.Assembly.GetExecutingAssembly().GetType(CardScriptName); } }
 
     public int Cost
     {
@@ -29,6 +34,30 @@ public class Card : ScriptableObject
         set
         {
             cost = value;
+        }
+    }
+
+    public bool TargetsCard
+    {
+        get
+        {
+            return targetsCard;
+        }
+    }
+
+    public bool TargetsEnemy
+    {
+        get
+        {
+            return targetsEnemy;
+        }
+    }
+
+    public bool TargetsAlly
+    {
+        get
+        {
+            return targetsAlly;
         }
     }
 }
