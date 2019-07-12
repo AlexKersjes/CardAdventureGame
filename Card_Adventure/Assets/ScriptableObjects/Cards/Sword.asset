@@ -16,6 +16,6 @@ MonoBehaviour:
   cardArt: {fileID: 21300000, guid: c30901674e346f9439f7093c55c8647f, type: 3}
   targetNo: 1
   targetsAlly: 0
-  targetsEnemy: 0
+  targetsEnemy: 1
   targetsCard: 0
   CardScriptName: SpellScript

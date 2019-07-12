@@ -23,7 +23,7 @@ public class CardDisplay : MonoBehaviour
         Refresh();
         try
         {
-            this.gameObject.AddComponent(card.cardScript);
+            this.gameObject.AddComponent(card.CardScript);
         }
         catch
         {

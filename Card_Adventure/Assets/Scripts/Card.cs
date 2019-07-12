@@ -22,7 +22,8 @@ public class Card : ScriptableObject
     private bool targetsCard = false;
     [SerializeField]
     private string CardScriptName;
-    public Type cardScript { get { return System.Reflection.Assembly.GetExecutingAssembly().GetType(CardScriptName); } }
+    private Type cardScript;
+    public Type CardScript { get { if(cardScript==null) cardScript = System.Reflection.Assembly.GetExecutingAssembly().GetType(CardScriptName); return cardScript; } }
 
     public int Cost
     {

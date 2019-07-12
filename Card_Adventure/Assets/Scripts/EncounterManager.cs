@@ -16,7 +16,7 @@ public class EncounterManager : Singleton<EncounterManager>
 
     public void CastSpell(SpellArgs spellArgs)
     {
-
+        Debug.Log(spellArgs.card.name + " was cast");
     }
     public void PassTurn()
     {

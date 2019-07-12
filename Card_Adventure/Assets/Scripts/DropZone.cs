@@ -12,7 +12,7 @@ public class DropZone : MonoBehaviour, IDropHandler
         {
             EncounterManager.Instance.CastSpell(GetSpellArgs(eventData));
         }
-        catch (System.NullReferenceException e)
+        catch (System.Exception e)
         {
             Debug.Log(e.Message);
             return;
@@ -40,6 +40,10 @@ public class DropZone : MonoBehaviour, IDropHandler
             else if (card.TargetsEnemy && instance.character is Enemy)
             {
                 return new SingleArgs(card, instance);
+            }
+            else
+            {
+                throw new System.Exception("Attempted target is invalid");
             }
 
         }

@@ -79,15 +79,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Character Scripts\Character.cs" />
-    <Compile Include="Assets\Character Scripts\CharacterClass.cs" />
-    <Compile Include="Assets\Character Scripts\CharacterInstance.cs" />
-    <Compile Include="Assets\Character Scripts\Enemy.cs" />
     <Compile Include="Assets\EventSystem\EventListener.cs" />
     <Compile Include="Assets\EventSystem\EventRaiser.cs" />
     <Compile Include="Assets\EventSystem\GameEvent.cs" />
     <Compile Include="Assets\Scripts\Card.cs" />
     <Compile Include="Assets\Scripts\CardDisplay.cs" />
+    <Compile Include="Assets\Scripts\Character Scripts\Character.cs" />
+    <Compile Include="Assets\Scripts\Character Scripts\CharacterClass.cs" />
+    <Compile Include="Assets\Scripts\Character Scripts\CharacterInstance.cs" />
+    <Compile Include="Assets\Scripts\Character Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Deck.cs" />
     <Compile Include="Assets\Scripts\Draggable.cs" />
     <Compile Include="Assets\Scripts\DropZone.cs" />
