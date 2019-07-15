@@ -40,4 +40,5 @@ public class CardDisplay : MonoBehaviour
         this.name = card.name;
     }
 
+
 }

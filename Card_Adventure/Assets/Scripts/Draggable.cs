@@ -70,4 +70,15 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         Destroy(placeholder);
     }
 
+
+    public IEnumerator DrawAnimation(Transform deckTransform)
+    {
+        this.enabled=false;
+        yield return new WaitForEndOfFrame();
+        var pos = this.transform.position;
+        transform.position = deckTransform.position;
+        iTween.MoveTo(this.transform.gameObject, pos, 1);
+        this.enabled = true;
+        yield break;
+    }
 }

@@ -118,6 +118,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Card_Adventure.Plugins.csproj">
+      <Project>{D605AFC8-A1E3-71B2-FA75-82436F20DF18}</Project>
+      <Name>Card_Adventure.Plugins</Name>
+    </ProjectReference>
     <ProjectReference Include="Card_Adventure.csproj">
       <Project>{673AAA76-3D31-5FD3-46DA-2D402E580451}</Project>
       <Name>Card_Adventure</Name>
@@ -125,6 +129,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\EventSystem\Editor\GameEventEditor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Plugins\iTween\ReadMe!\ReadMe!.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

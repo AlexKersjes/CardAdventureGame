@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
+using UnityEngine.UI;
 
 public class Deck : MonoBehaviour
 {
@@ -32,6 +33,9 @@ public class Deck : MonoBehaviour
             GameObject g = Instantiate(prefabCard, hand.transform);
             g.GetComponent<CardDisplay>().card = cards[0];
             g.transform.SetSiblingIndex(0);
+
+            StartCoroutine( g.GetComponent<Draggable>().DrawAnimation(this.transform));
+            
             cards.RemoveAt(0);
         }
     }

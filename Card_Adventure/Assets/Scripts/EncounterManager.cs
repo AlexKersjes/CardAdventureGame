@@ -44,7 +44,8 @@ public class EncounterManager : Singleton<EncounterManager>
     public void EmptyDraw()
     {
         deck.cards = discard.cards;
-        discard.cards = new List<Card>();    
+        discard.cards = new List<Card>();
+        Shuffle();
     }
 
     public void Shuffle()

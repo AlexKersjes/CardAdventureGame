@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Card_Adventure", "Card_Adventure.csproj", "{673AAA76-3D31-5FD3-46DA-2D402E580451}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Card_Adventure.Plugins", "Card_Adventure.Plugins.csproj", "{D605AFC8-A1E3-71B2-FA75-82436F20DF18}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Card_Adventure.Editor", "Card_Adventure.Editor.csproj", "{5B1EECB8-D9AF-08CB-60A1-F57CC557E367}"
 EndProject
 Global
@@ -15,6 +17,10 @@ Global
 		{673AAA76-3D31-5FD3-46DA-2D402E580451}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{673AAA76-3D31-5FD3-46DA-2D402E580451}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{673AAA76-3D31-5FD3-46DA-2D402E580451}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D605AFC8-A1E3-71B2-FA75-82436F20DF18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D605AFC8-A1E3-71B2-FA75-82436F20DF18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D605AFC8-A1E3-71B2-FA75-82436F20DF18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D605AFC8-A1E3-71B2-FA75-82436F20DF18}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5B1EECB8-D9AF-08CB-60A1-F57CC557E367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5B1EECB8-D9AF-08CB-60A1-F57CC557E367}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B1EECB8-D9AF-08CB-60A1-F57CC557E367}.Release|Any CPU.ActiveCfg = Release|Any CPU
