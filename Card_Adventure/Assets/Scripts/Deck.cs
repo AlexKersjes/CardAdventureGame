@@ -34,7 +34,10 @@ public class Deck : MonoBehaviour
             g.GetComponent<CardDisplay>().card = cards[0];
             g.transform.SetSiblingIndex(0);
 
-            StartCoroutine( g.GetComponent<Draggable>().DrawAnimation(this.transform));
+            g.AddComponent<SmoothDamp>().hand = hand.transform ;
+            g.transform.position = transform.position;
+            
+            //StartCoroutine( g.GetComponent<Draggable>().DrawAnimation(this.transform));
             
             cards.RemoveAt(0);
         }

@@ -37,8 +37,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         offset = eventData.position;
 
         int newSiblingIndex = placeholder.transform.parent.childCount ;
-        if (this.transform.position.y < oldParent.transform.position.y)
-        {
+ 
             for (int i = 0; i < oldParent.childCount; i++)
             {
                 if (this.transform.position.x < oldParent.GetChild(i).position.x)
@@ -50,7 +49,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
                 }
 
             }
-        }
+      
         placeholder.transform.SetSiblingIndex(newSiblingIndex);
     }
 
@@ -70,7 +69,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         Destroy(placeholder);
     }
 
-
+    /*
     public IEnumerator DrawAnimation(Transform deckTransform)
     {
         this.enabled=false;
@@ -81,4 +80,5 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         this.enabled = true;
         yield break;
     }
+    */
 }

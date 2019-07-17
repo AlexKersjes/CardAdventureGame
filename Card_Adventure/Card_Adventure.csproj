@@ -99,7 +99,9 @@
     <Compile Include="Assets\Scripts\DropZone.cs" />
     <Compile Include="Assets\Scripts\EncounterManager.cs" />
     <Compile Include="Assets\Scripts\Equipment.cs" />
+    <Compile Include="Assets\Scripts\HandScript.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
+    <Compile Include="Assets\Scripts\SmoothDamp.cs" />
     <Compile Include="Assets\Scripts\SpellClasses\NoArgs.cs" />
     <Compile Include="Assets\Scripts\SpellClasses\SingleArgs.cs" />
     <Compile Include="Assets\Scripts\SpellClasses\SpellArgs.cs" />
